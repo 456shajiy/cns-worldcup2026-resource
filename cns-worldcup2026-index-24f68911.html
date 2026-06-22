@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026世界杯 · 站点介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            background-color: #f9f6f0;
+            color: #2e2b26;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-wrap {
+            max-width: 840px;
+            width: 100%;
+            background-color: #fefcf8;
+            padding: 2.8rem 2.2rem;
+            border-radius: 28px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border: 1px solid #ede8dd;
+        }
+
+        /* 文章式排版 */
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #1f2b24;
+            margin-bottom: 0.4rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #dcccb8;
+            display: inline-block;
+        }
+
+        .subhead {
+            font-size: 1.1rem;
+            color: #706c64;
+            margin: 0.4rem 0 2.4rem 0;
+            font-style: italic;
+            letter-spacing: 0.3px;
+            border-left: 4px solid #c8b9a2;
+            padding-left: 1.2rem;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 450;
+            margin: 2.2rem 0 1rem 0;
+            color: #34423b;
+            border-bottom: 1px dashed #dad2c2;
+            padding-bottom: 0.3rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 450;
+            margin: 1.8rem 0 0.6rem 0;
+            color: #3f4d44;
+        }
+
+        p {
+            margin: 0.9rem 0;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        .intro-block {
+            background: #f2ede3;
+            padding: 1.8rem 2rem;
+            border-radius: 18px;
+            margin: 1.8rem 0;
+            border-left: 6px solid #b7a68b;
+        }
+
+        .highlight-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .highlight-card {
+            background: #f4efe7;
+            border-radius: 18px;
+            padding: 1.4rem 1.6rem;
+            flex: 1 1 180px;
+            border: 1px solid #e4dbcd;
+            transition: background 0.15s;
+        }
+
+        .highlight-card strong {
+            display: block;
+            font-size: 1.2rem;
+            color: #2f3e35;
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-card p {
+            margin: 0.2rem 0 0 0;
+            font-size: 0.98rem;
+            color: #3f3b34;
+        }
+
+        .callout-box {
+            background-color: #ece4d7;
+            padding: 1.2rem 1.6rem;
+            border-radius: 20px;
+            margin: 1.8rem 0;
+            border: 1px solid #d8cdba;
+            font-size: 1rem;
+        }
+
+        .callout-box p {
+            margin: 0.2rem 0;
+        }
+
+        .faq-mini {
+            background: #f7f1e7;
+            padding: 1.4rem 1.8rem;
+            border-radius: 20px;
+            margin: 2rem 0 0.6rem 0;
+        }
+
+        .faq-mini dt {
+            font-weight: 600;
+            color: #2a382e;
+            margin-top: 0.8rem;
+            font-size: 1.08rem;
+        }
+
+        .faq-mini dd {
+            margin-left: 0.3rem;
+            color: #3d3a33;
+            padding-left: 0.6rem;
+            border-left: 2px solid #cfc2ae;
+            margin-bottom: 0.6rem;
+        }
+
+        .faq-mini dt:first-of-type {
+            margin-top: 0.2rem;
+        }
+
+        .link-embed {
+            color: #4e6a50;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px dotted #8f9d85;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .link-embed:hover {
+            color: #1f3b25;
+            border-bottom: 1px solid #3f6347;
+        }
+
+        .footnote {
+            margin-top: 2.8rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #dcd0be;
+            font-size: 0.9rem;
+            color: #6b655b;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 0.8rem 0.5rem;
+            }
+
+            .page-wrap {
+                padding: 1.6rem 1.2rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .highlight-grid {
+                flex-direction: column;
+            }
+
+            .intro-block {
+                padding: 1.2rem 1.2rem;
+            }
+
+            .callout-box {
+                padding: 1rem;
+            }
+
+            .faq-mini {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <h1>2026 · 世界杯</h1>
+    <div class="subhead">一个围绕赛事信息而构建的站点 · 简明、务实、可参考</div>
+
+    <div class="intro-block">
+        <p>对于关注国际足球盛事的读者而言，<a href="https://cns--worldcup2026.com" class="link-embed">世界杯</a>始终是信息聚合与赛事讨论的核心入口。本站正是围绕这一主题整理而成，重点在于提供赛事结构、赛程框架以及相关的背景说明。</p>
+        <p>我们将其视作一份动态参考：内容会随着赛事进程而更新，但始终以清晰、真实为优先原则。下文从几个方面介绍该站点的定位与使用方式。</p>
+    </div>
+
+    <h2>站点摘要</h2>
+    <p>网站 <strong>cns--worldcup2026.com</strong> 并非官方组织或其附属平台，而是一个由爱好者与信息整理者协作搭建的资料型页面。内容素材主要来自公开赛事公告、已确认的赛程安排以及区域性足球协会的披露。站点不对赛事结果或转播权做任何承诺，所有信息仅供读者结合官方渠道交叉核对。</p>
+    <p>如果你正在寻找与下一届<a href="https://cns--worldcup2026.com" class="link-embed">世界杯</a>相关的简要说明、参赛队分布、举办城市名单以及时间线概览，这里或许能成为一个不错的起点。</p>
+
+    <h2>内容亮点</h2>
+    <div class="highlight-grid">
+        <div class="highlight-card">
+            <strong>结构化赛程</strong>
+            <p>以阶段、分组、时间线为脉络整理，方便快速定位关键轮次。</p>
+        </div>
+        <div class="highlight-card">
+            <strong>场馆与城市</strong>
+            <p>汇总已公布的主办城市基本信息，包含体育场容量、地理位置等客观数据。</p>
+        </div>
+        <div class="highlight-card">
+            <strong>参赛名额</strong>
+            <p>基于各大洲足联的分配方案，列出名额分布及可能的附加赛路径。</p>
+        </div>
+        <div class="highlight-card">
+            <strong>历史参考</strong>
+            <p>附带往届赛事的基础纪录（冠军、射手、特殊赛制），便于纵向比较。</p>
+        </div>
+    </div>
+
+    <h2>使用建议</h2>
+    <p>本站适合以下三类场景：其一，快速了解下一届<a href="https://cns--worldcup2026.com" class="link-embed">世界杯</a>的基本框架，无需在大量碎片信息中检索；其二，作为早期参考，在赛程表正式发布后对比验证；其三，非实时讨论场景下，获取相对稳健的赛事背景资料。</p>
+    <p>若需获取最新官方公告、实时比分或票务信息，建议优先查阅 FIFA 官网或各参赛协会的授权平台。本站不对衍生链接或第三方外部资源的准确性负责，但会尽力保持内部内容与公开信息一致。</p>
+
+    <div class="callout-box">
+        <p><strong>▎可信但克制的说明</strong></p>
+        <p>本站内容基于可验证的公开信息编译整理，不包含未经证实的传闻、主观预测或商业推广。<br>
+        每一处赛事数据均标注参考来源（或来源类别），并在页面底部注明最近更新日期。若发现信息滞后或错误，欢迎通过站点内联系通道反馈——我们会在核实后更正，并记录版本变更。</p>
+        <p>注意：本站不提供直播、博彩、投注或任何形式的付费推荐。所有服务仅限信息索引与知识聚合。</p>
+    </div>
+
+    <h2>常见疑问（简要）</h2>
+    <dl class="faq-mini">
+        <dt>网站会覆盖所有参赛队资料吗？</dt>
+        <dd>目前以已确定的席位分配和已出炉的东道主信息为主。随着预选赛推进，将逐步补充各队晋级概况。</dd>
+        <dt>信息的更新频率如何？</dt>
+        <dd>在关键时间节点（抽签、分组、赛程发布等）后的一周内进行集中更新。非活跃期保持月度审查。</dd>
+        <dt>站点是否支持其他语言？</dt>
+        <dd>现阶段以中文内容为主，核心赛事名词保留英语缩写或双语对照，以方便搭配其他语言资料查阅。</dd>
+        <dt>我是否可以转载本站内容？</dt>
+        <dd>站内原始整理的赛程表与数据列表可以非商业引用，但请注明出处（cns--worldcup2026.com）。对于翻译或二次汇编的部分，建议自行核对原始来源。</dd>
+    </dl>
+
+    <h3>最后一点</h3>
+    <p>在这个信息极易被噪声淹没的时代，我们更愿意选择一种克制的编辑立场：不抢发未经确认的新闻，不以“内部消息”吸引点击，只呈现那些可以回溯、对照、验证的内容。如果你认同这样的信息处理方式，那么以<a href="https://cns--worldcup2026.com" class="link-embed">世界杯</a>为主题的这一页，或许正适合放进你的书签。</p>
+
+    <div class="footnote">
+        <p>cns--worldcup2026.com · 赛事资料聚合站 · 最近更新：2025年4月</p>
+        <p style="margin-top:0.3rem; font-size:0.8rem; color:#8d8478;">内容仅供参考，请务必以官方发布为最终依据。</p>
+    </div>
+
+</div>
+</body>
+</html>
